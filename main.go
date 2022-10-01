@@ -7,6 +7,7 @@ import(
 
 	"github.com/joho/godotenv"
 	"github.com/go-chi/chi"
+	"github.com/go-chi/chi/middleware"
 	"github.com/go-chi/cors"
 	"github.com/unrolled/render"
 )
@@ -16,12 +17,14 @@ func main(){
 	router := chi.NewRouter()
 	r := render.New()
 
-	cors.New(cors.Options{
+	newCors := cors.New(cors.Options{
 		AllowedOrigins:   []string{"http://localhost:3000", "https://girlsintech.netlify.app"},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowCredentials: true,
 	})
 
+	router.Use(newCors.Handler)
+	router.Use(middleware.Logger)
 	router.Get("/", func(res http.ResponseWriter, req *http.Request){
 		r.JSON(res, http.StatusOK, map[string]string{
 			"message": "deployed on heroku",
@@ -29,6 +32,6 @@ func main(){
 	})
 
 
-	fmt.Println("start of project!")
+	fmt.Println("Listening on port:", os.Getenv("PORT"))
 	http.ListenAndServe(fmt.Sprintf(":%s", os.Getenv("PORT")), router)
 }
