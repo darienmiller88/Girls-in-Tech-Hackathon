@@ -5,8 +5,8 @@
     position: fixed;
     top: 0;
 
-    background-color: rgb(200, 200, 200);
-    color: rgb(0, 170, 0);
+    background-color: rgb(255, 255, 255);
+    color: var(--primary);
     width: 100vw;
     padding: 20px 0px;
 
@@ -43,10 +43,11 @@
             padding: 25px 20px;
 
             font-size: 20px;
-            transition: 0.3s;
+            transition: 0.4s;
 
             &:hover{
                 cursor: pointer;
+                color: var(--primary-hover);
             }
         }
     }

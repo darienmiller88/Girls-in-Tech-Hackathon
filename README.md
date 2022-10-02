@@ -1,7 +1,6 @@
 # Girls-in-Tech-Hackathon
 
 ![](https://img.shields.io/badge/made%20by-DarienMiller-blue)
-![](https://img.shields.io/badge/made%20by-DanielLiu-blue)
 ![](https://img.shields.io/badge/Golang-1.17-yellow)
 ![](https://img.shields.io/badge/SolidJS-red)
 ![](https://img.shields.io/badge/PostgreSQL-green)

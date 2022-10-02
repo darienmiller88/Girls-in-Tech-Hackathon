@@ -1,0 +1,70 @@
+.PhotoInfo{
+    width: 80%;
+    margin: auto;
+
+    .row_one{
+        display: grid;
+        grid-template-columns: 40% auto 55%;
+        border: 2px black solid;
+
+        .mission_wrapper{
+            border: 2px seagreen solid;
+            height: 80vh;
+
+            .initiative_statement{
+                margin-left: 5%;
+            }
+        }   
+    }
+
+    .row_two{
+        display: grid;
+        grid-template-columns: 55% auto 40%;
+
+        .stories_wrapper{
+            border: 2px orange solid;
+            height: 80vh;
+        }
+
+        .news_wrapper{
+            border: 2px red solid;
+            height: 80vh;
+        }
+
+        border: 2px solid red;
+    }
+
+    .initiative_statement{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        border-top: 4px var(--primary) solid;
+        border-bottom: 4px var(--primary) solid;
+
+        height: 70%;
+        width: 60%;
+        padding: 0px 30px;
+        color: var(--primary);
+
+        .header{
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .statement_text{
+            font-size: 20px;
+            padding: 30px 0px;
+        }
+
+        .read_more{
+            font-size: 25px;
+            transition: 0.3s;
+
+            &:hover{
+                cursor: pointer;
+                color: var(--primary-hover);
+            }
+        }
+    }
+}
