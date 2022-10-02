@@ -1,0 +1,63 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-image: url("../../../assets/home-pictures/hands.jpg");
+
+    overflow-x: hidden;
+
+    .slogan_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        color: white;
+
+        .hero_slogan_pt1{
+            color: white;
+            font-size: 50px;
+        }
+    
+        .hero_slogan_pt2{
+            color: white;
+            font-size: 100px;
+        }
+    }
+
+    .join_now_wrapper{
+        display: grid;
+        grid-template-columns: 80% auto;
+        width: 80%;
+        background-color: white;
+        border-top: 4px solid var(--primary);
+        border-bottom: 4px solid white;
+
+        div{
+            color: var(--primary);
+            font-size: 25px;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        button{
+            background-color: var(--primary);
+            color: white;
+            font-size: 30px;
+            padding: 20px;
+            border: none;
+            transition: 0.3s;
+
+            &:hover{
+                cursor: pointer;
+                background-color: var(--primary-hover);
+            }
+        }
+    }
+}
