@@ -4,6 +4,7 @@ import(
 	"github.com/go-chi/chi"
 
 	"Hackathon/api/controllers"
+	"Hackathon/api/middlewares"
 )
 
 type TestRoutes struct{
@@ -15,6 +16,6 @@ func (t *TestRoutes) Init(){
 	t.Router = chi.NewRouter()
 	t.controller.Init()
 
-	t.Router.Get("/", t.controller.GetTests)
-	t.Router.Post("/", t.controller.PostTest)
+	t.Router.With(middlewares.Auth).Get("/", t.controller.GetTests)
+	t.Router.With(middlewares.Auth).Post("/", t.controller.PostTest)
 }
