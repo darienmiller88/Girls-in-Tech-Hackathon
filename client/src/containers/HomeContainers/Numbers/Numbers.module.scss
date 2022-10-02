@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    // margin-top: 50px;
 
     .title{
         color: var(--primary);
@@ -21,7 +21,7 @@
             align-items: center;
             
             .stat{
-                text-align: center;
+                align-self: flex-end;
                 font-size: 100px;
                 font-weight: bold;
                 color: var(--primary);
@@ -32,7 +32,7 @@
                 width: 50%;
                 font-weight: bold;
                 color: orange;
-                text-align: center;
+                text-align: right;
             }
         }
     }

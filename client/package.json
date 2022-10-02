@@ -18,7 +18,9 @@
     "axios": "^0.27.2",
     "react-router-dom": "^6.4.1",
     "sass": "^1.55.0",
+    "solid-bootstrap": "^1.0.8",
     "solid-icons": "^1.0.1",
-    "solid-js": "^1.5.1"
+    "solid-js": "^1.5.1",
+    "solid-slider": "^1.3.9"
   }
 }

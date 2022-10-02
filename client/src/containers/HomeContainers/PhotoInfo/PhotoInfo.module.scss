@@ -1,14 +1,13 @@
 .PhotoInfo{
     width: 80%;
     margin: auto;
+    margin-top: 100px;
 
     .row_one{
         display: grid;
         grid-template-columns: 40% auto 55%;
-        border: 2px black solid;
 
         .mission_wrapper{
-            border: 2px seagreen solid;
             height: 80vh;
 
             .initiative_statement{
@@ -22,16 +21,12 @@
         grid-template-columns: 55% auto 40%;
 
         .stories_wrapper{
-            border: 2px orange solid;
             height: 80vh;
         }
 
         .news_wrapper{
-            border: 2px red solid;
             height: 80vh;
         }
-
-        border: 2px solid red;
     }
 
     .initiative_statement{

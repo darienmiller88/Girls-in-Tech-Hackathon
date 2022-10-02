@@ -1,0 +1,28 @@
+.partners{
+    margin-top: 100px;
+    
+    .title{
+        text-align: center;
+        color: var(--primary);
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    .partners{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+
+        .img_wrapper{
+            display: flex;
+            align-items: center;
+            
+            img{
+                width: 100px;
+                height: auto;
+            }
+        }
+    }
+}
