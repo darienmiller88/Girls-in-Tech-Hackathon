@@ -16,6 +16,7 @@ export default function Contact() {
                         <div className={styles.box}>
                             <div className={styles.street}>500 Terry Francois Street</div>
                             <div className={styles.city}>San Francisco, CA 94158</div>
+                            <div>Phone: 1-800-000-0000</div>
                         </div>
                     </div>
                     <h1 className={styles.email}>info@mysite.com</h1>
@@ -23,16 +24,15 @@ export default function Contact() {
                             <BsFacebook className={styles.social}/>
                             <BsYoutube  className={styles.social}/>
                             <BsLinkedin className={styles.social}/>
-
                     </div>
                 </div>
             </div>
 
             <div className={styles.newsletter}>
                 <h1>Be the first to know</h1>
-                <h2>Sign up to our newsletter to stay informed</h2>
+                <h3>Sign up to our newsletter to stay informed</h3>
                 <input placeholder="email"/>
-                <h3>Subscribe Now</h3>
+                <h4>Subscribe Now</h4>
             </div>            
         </div>
     )
